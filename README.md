@@ -19,6 +19,24 @@ Create a ColorLogger instance
 ```
 logger = ColorLogger(log_name='yourlog.log', log_dir='\\path\\to\\dir', level='DEBUG', log_to_file=True)
 ```
+The `ColorLogger` class is initialized with the following parameters:
+
+- `log_name` (str): The name of the log file. Defaults to 'logger.log'.
+- `log_dir` (str): The directory to save the log file. If not provided, the current working directory is used.
+- `level` (str): The logging level. One of 'DEBUG', 'INFO', 'WARNING', 'ERROR', or 'NONE'. Defaults to 'INFO'.
+- `log_to_file` (bool): Whether to save the log to a file. Defaults to False.
+
+If `log_to_file` is set to True and a valid `log_dir` is provided or determined, a log file will be created in that directory. If the `log_name` does not include a file extension, '.log' will be used.
+
+Once you have created an instance of `ColorLogger`, you can use it to log messages...
+
+```python
+logger.debug('Your debug message')
+logger.info('Your info message')
+logger.success('Your success message')
+logger.warning('Your warning message')
+logger.error('Your error message')
+```
 ## License
 
 MIT License

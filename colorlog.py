@@ -1,4 +1,4 @@
-"""Logger.py: A logger module for logging to stdout and/or a file"""
+"""colorlog.py: A logger module for logging to stdout and/or a file"""
 __version__ = '1.0'
 
 
@@ -38,7 +38,7 @@ class ColorLogger:
             out_dir (str): The directory to save the log file.
             log_to_file (bool): Whether to save the log to a file.
         """
-        self.log_dir = Path(log_dir) if log_dir is not None else None
+        self.log_dir = Path(log_dir) if log_dir is not None else Path.cwd()
         self.log_to_file = log_to_file and self.log_dir is not None
 
         if not level in self.LEVELS:
