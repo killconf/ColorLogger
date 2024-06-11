@@ -34,7 +34,7 @@ class ColorLogger:
         Initialize the ColorLogger class
         Args:
             log_name (str): The name of the log file.
-            level (str): The logging level. One of 'DEBUG', 'INFO', 'WARNING', 'ERROR', or 'NONE'.
+            level (str): The logging level. One of 'DEBUG', 'INFO', 'SUCCESS', 'WARNING', 'ERROR', or 'NONE'.
             out_dir (str): The directory to save the log file.
             log_to_file (bool): Whether to save the log to a file.
         """

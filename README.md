@@ -23,7 +23,7 @@ The `ColorLogger` class is initialized with the following parameters:
 
 - `log_name` (str): The name of the log file. Defaults to 'logger.log'.
 - `log_dir` (str): The directory to save the log file. If not provided, the current working directory is used.
-- `level` (str): The logging level. One of 'DEBUG', 'INFO', 'WARNING', 'ERROR', or 'NONE'. Defaults to 'INFO'.
+- `level` (str): The logging level. One of 'DEBUG', 'INFO', 'SUCCESS', 'WARNING', 'ERROR', or 'NONE'. Defaults to 'INFO'.
 - `log_to_file` (bool): Whether to save the log to a file. Defaults to False.
 
 If `log_to_file` is set to True and a valid `log_dir` is provided or determined, a log file will be created in that directory. If the `log_name` does not include a file extension, '.log' will be used.
